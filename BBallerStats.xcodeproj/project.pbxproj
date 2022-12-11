@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B89C70329464DEF00FB265D /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B89C70229464DEF00FB265D /* StatsView.swift */; };
+		0B89C7052946521C00FB265D /* ButtonPressAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B89C7042946521C00FB265D /* ButtonPressAction.swift */; };
 		0BB60FC529464B11002105F0 /* BBallerStatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB60FC429464B11002105F0 /* BBallerStatsApp.swift */; };
-		0BB60FC729464B11002105F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB60FC629464B11002105F0 /* ContentView.swift */; };
 		0BB60FC929464B12002105F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BB60FC829464B12002105F0 /* Assets.xcassets */; };
 		0BB60FCC29464B12002105F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BB60FCB29464B12002105F0 /* Preview Assets.xcassets */; };
+		0BB60FDD29464D0E002105F0 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB60FDC29464D0E002105F0 /* Game.swift */; };
+		0BB60FE029464D48002105F0 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB60FDF29464D48002105F0 /* GameView.swift */; };
+		0BB60FE229464D70002105F0 /* ResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB60FE129464D70002105F0 /* ResetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B89C70229464DEF00FB265D /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		0B89C7042946521C00FB265D /* ButtonPressAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPressAction.swift; sourceTree = "<group>"; };
 		0BB60FC129464B11002105F0 /* BBallerStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBallerStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BB60FC429464B11002105F0 /* BBallerStatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBallerStatsApp.swift; sourceTree = "<group>"; };
-		0BB60FC629464B11002105F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0BB60FC829464B12002105F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BB60FCB29464B12002105F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0BB60FDC29464D0E002105F0 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		0BB60FDF29464D48002105F0 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		0BB60FE129464D70002105F0 /* ResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				0BB60FC429464B11002105F0 /* BBallerStatsApp.swift */,
-				0BB60FC629464B11002105F0 /* ContentView.swift */,
+				0BB60FDE29464D39002105F0 /* Views */,
+				0BB60FDB29464CEC002105F0 /* Model */,
 				0BB60FC829464B12002105F0 /* Assets.xcassets */,
 				0BB60FCA29464B12002105F0 /* Preview Content */,
 			);
@@ -65,6 +74,25 @@
 				0BB60FCB29464B12002105F0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0BB60FDB29464CEC002105F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0BB60FDC29464D0E002105F0 /* Game.swift */,
+				0B89C7042946521C00FB265D /* ButtonPressAction.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0BB60FDE29464D39002105F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0BB60FDF29464D48002105F0 /* GameView.swift */,
+				0BB60FE129464D70002105F0 /* ResetView.swift */,
+				0B89C70229464DEF00FB265D /* StatsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BB60FC729464B11002105F0 /* ContentView.swift in Sources */,
+				0BB60FE229464D70002105F0 /* ResetView.swift in Sources */,
+				0B89C7052946521C00FB265D /* ButtonPressAction.swift in Sources */,
+				0B89C70329464DEF00FB265D /* StatsView.swift in Sources */,
 				0BB60FC529464B11002105F0 /* BBallerStatsApp.swift in Sources */,
+				0BB60FE029464D48002105F0 /* GameView.swift in Sources */,
+				0BB60FDD29464D0E002105F0 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +227,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +281,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -270,11 +302,15 @@
 				DEVELOPMENT_TEAM = YZ8ZVD6D26;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "BBaller Stats";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,6 +318,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Wallace.BBallerStats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -299,11 +338,15 @@
 				DEVELOPMENT_TEAM = YZ8ZVD6D26;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "BBaller Stats";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +354,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Wallace.BBallerStats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
